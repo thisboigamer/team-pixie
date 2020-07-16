@@ -32,7 +32,15 @@ public class PlayerHealth : MonoBehaviour
         //Checks to see when Health is Depleted
         if (Health <= 1)
         {
-            //Manager.GetComponent<ManagerScript>().GameOver();
+            Manager.GetComponent<ManagerScript>().GameOver();
+        }
+    }
+
+    void OnTriggerEnter(Collider collide)
+    {
+        if (collide.tag == "PixieStick")
+        {
+            HealthUp();
         }
     }
 
