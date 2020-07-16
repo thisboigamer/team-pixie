@@ -41,6 +41,7 @@ public class PlayerHealth : MonoBehaviour
         if (collide.tag == "PixieStick")
         {
             HealthUp();
+            Destroy(collide.gameObject);
         }
     }
 
