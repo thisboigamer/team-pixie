@@ -256,7 +256,7 @@ PrefabInstance:
     - target: {fileID: 8272801411482733882, guid: 666bc2e6e8344f94e98e68586546da3f,
         type: 3}
       propertyPath: m_Name
-      value: item (2)
+      value: Phone
       objectReference: {fileID: 0}
     - target: {fileID: 8272801411482733879, guid: 666bc2e6e8344f94e98e68586546da3f,
         type: 3}
@@ -315,6 +315,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 666bc2e6e8344f94e98e68586546da3f, type: 3}
+--- !u!1 &1373882095 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8272801411482733882, guid: 666bc2e6e8344f94e98e68586546da3f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1373882094}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1571342341
 GameObject:
   m_ObjectHideFlags: 0
@@ -542,7 +548,7 @@ PrefabInstance:
     - target: {fileID: 8272801411482733882, guid: 666bc2e6e8344f94e98e68586546da3f,
         type: 3}
       propertyPath: m_Name
-      value: item (1)
+      value: Key
       objectReference: {fileID: 0}
     - target: {fileID: 8272801411482733879, guid: 666bc2e6e8344f94e98e68586546da3f,
         type: 3}
@@ -601,6 +607,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 666bc2e6e8344f94e98e68586546da3f, type: 3}
+--- !u!1 &1621354655 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8272801411482733882, guid: 666bc2e6e8344f94e98e68586546da3f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1621354654}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1857305333
 GameObject:
   m_ObjectHideFlags: 0
@@ -812,6 +824,61 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2132548693
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2132548694}
+  - component: {fileID: 2132548695}
+  m_Layer: 0
+  m_Name: Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2132548694
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132548693}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5, y: -6.92, z: 0.28}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2132548695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132548693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9ab6e174de7c1741a8090e50c195bb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Phone: {fileID: 1373882095}
+  Key: {fileID: 1621354655}
+  Wallet: {fileID: 8272801409571135501}
+  PhonePosition1: {x: 1, y: 1, z: 1}
+  PhonePosition2: {x: 2, y: 2, z: 2}
+  PhonePosition3: {x: 3, y: 3, z: 3}
+  KeyPosition1: {x: 1, y: 1, z: 1}
+  KeyPosition2: {x: 2, y: 2, z: 2}
+  KeyPosition3: {x: 3, y: 3, z: 3}
+  WalletPosition1: {x: 1, y: 1, z: 1}
+  WalletPosition2: {x: 2, y: 2, z: 2}
+  WalletPosition3: {x: 3, y: 3, z: 3}
 --- !u!1001 &8272801409571135500
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -822,7 +889,7 @@ PrefabInstance:
     - target: {fileID: 8272801411482733882, guid: 666bc2e6e8344f94e98e68586546da3f,
         type: 3}
       propertyPath: m_Name
-      value: item
+      value: Wallet
       objectReference: {fileID: 0}
     - target: {fileID: 8272801411482733879, guid: 666bc2e6e8344f94e98e68586546da3f,
         type: 3}
@@ -881,3 +948,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 666bc2e6e8344f94e98e68586546da3f, type: 3}
+--- !u!1 &8272801409571135501 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8272801411482733882, guid: 666bc2e6e8344f94e98e68586546da3f,
+    type: 3}
+  m_PrefabInstance: {fileID: 8272801409571135500}
+  m_PrefabAsset: {fileID: 0}
