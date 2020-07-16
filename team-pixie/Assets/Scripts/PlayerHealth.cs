@@ -10,7 +10,7 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] Slider HealthSlider;
 
     //Base Starting Health
-    [SerializeField] float Health = 100f;
+    [SerializeField] public float Health = 100f;
 
     //ManagerObject
     private GameObject Manager;
@@ -27,7 +27,7 @@ public class PlayerHealth : MonoBehaviour
     {
 
         //Callse DecayHealth Every Second
-        Invoke("DecayHealth", 1);
+        Invoke("DecayHealth", 0);
 
         //Checks to see when Health is Depleted
         if (Health <= 1)
